@@ -19,3 +19,5 @@ services:
         value: "https://n8n.onrender.com/"
       - key: GENERIC_TIMEZONE
         value: "America/Bogota"
+        - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: "true"
