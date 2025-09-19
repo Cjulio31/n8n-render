@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: n8n-web
+    env: docker
+    plan: free   # puedes usar free para pruebas
+    autoDeploy: true
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "cjulio1116@gmail.com"   # cámbialo por tu usuario
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "aq9MLD8fpvj!CrM" # cámbialo por tu contraseña
+      - key: N8N_HOST
+        value: "n8n.onrender.com"   # Render genera el dominio, lo ajustas después
+      - key: N8N_PORT
+        value: "5678"
+      - key: WEBHOOK_URL
+        value: "https://n8n.onrender.com/"
+      - key: GENERIC_TIMEZONE
+        value: "America/Bogota"
