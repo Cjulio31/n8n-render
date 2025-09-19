@@ -8,4 +8,4 @@ WORKDIR /data
 EXPOSE 5678
 
 # Comando por defecto
-CMD ["n8n", "start"]
+#CMD ["n8n", "start"]
